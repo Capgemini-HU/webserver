@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="index.css">
+	<title>Innovation Project</title>
+	<body>
+		<div>
+			<label id="error"></label>
+		</div>
+		<div>
+			<div>
+				<label>Vanaf:</label>
+				<input type="date" id="fromDate">
+				<input type="time" id="fromTime">
+			</div>
+			<div>
+				<label>Tot:</label>
+				<input type="date" id="toDate">
+				<input type="time" id="toTime">
+			</div>
+			<button onclick="getHeatmap()">Submit</button>
+		</div>
+		<img id="picture" src="placeholder.png" width="700" height="500">
+	</body>
+	<script src="index.js"></script>
+</html>
