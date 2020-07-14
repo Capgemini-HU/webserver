@@ -24,7 +24,7 @@ function getHeatmap(){
 			console.log(myJson)
 			for (const success of myJson){
 				if (success.succes = true){
-					document.getElementById("picture").src = "/innovationFiles/huiskamer.png";
+					document.getElementById("picture").src = "/innovationFiles/heatmap.png";
 				}
 			}
 		})

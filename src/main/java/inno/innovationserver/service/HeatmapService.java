@@ -22,8 +22,8 @@ public class HeatmapService {
 		writeCsvFile(datapoints);
 		
 		try {
-			String command = "C:\\Users\\denis\\AppData\\Local\\Programs\\Python\\Python37-32\\python.exe create_heatmap.py";
-			Process p = Runtime.getRuntime().exec(command, new String[0], new File("C:\\Users\\denis\\Downloads\\Server-module-feature_create-heatmap\\Server-module-feature_create-heatmap\\"));
+			String command = /*Path to python.exe*/"PATH_HERE create_heatmap.py";
+			Process p = Runtime.getRuntime().exec(command, new String[0], new File(""/*Path to heatmap python project*/));
 			p.waitFor();
 			BufferedReader bri = new BufferedReader(new InputStreamReader(p.getInputStream()));
 			BufferedReader bre = new BufferedReader(new InputStreamReader(p.getErrorStream()));

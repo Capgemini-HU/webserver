@@ -25,7 +25,7 @@ public class HeatmapController {
 	@POST
 	@Consumes("application/json")
 	@Produces("application/json")
-	public String test(String stringJson) throws ParseException {
+	public String getHeatmap(String stringJson) throws ParseException {
 		JsonArrayBuilder jab = Json.createArrayBuilder();
 		
 		JSONObject myJson = new JSONObject(stringJson);
